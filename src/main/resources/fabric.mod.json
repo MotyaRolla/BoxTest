@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "boundingbox",
+  "version": "${version}",
+  "name": "BoundingBox",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/motya/BoundingBox"
+  },
+  "license": "MIT",
+  "icon": "assets/boundingbox/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.makotomc.boundingbox.client.BoundingBoxClient"
+    ],
+    "main": [
+      "ru.makotomc.boundingbox.BoundingBox"
+    ]
+  },
+  "mixins": [
+    "boundingbox.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
